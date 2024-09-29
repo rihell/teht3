@@ -1,0 +1,69 @@
+/* Perustyyli kaikille laitteille */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Navipalkin muokkausta varten */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/* Otsikkotyyli */
+header h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+}
+
+/* Responsiivinen navigaatio pienille laitteille */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* Muuttaa navigoinnin pystysuuntaiseksi */
+  }
+
+  nav ul li {
+      width: 100%; /* Asettaa linkit täyteen leveyteen pienemmillä näytöillä */
+  }
+
+  header h1 {
+      font-size: 24px; /* Pienempi fonttikoko pienillä näytöillä */
+  }
+
+  #vastaus {
+      padding: 10px;
+  }
+}
+
+/* Responsiivisuus tableteille */
+@media (max-width: 1024px) {
+  header h1 {
+      font-size: 28px;
+  }
+
+  #vastaus {
+      padding: 15px;
+  }
+}
